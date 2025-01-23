@@ -11,8 +11,11 @@ public class Human extends Animal implements Thinkable{
 
     // 引数ありコンストラクタ
     public Human(String name, int age, String hobby) {
-        super.setName(name);
-        super.setAge(age);
+        // 2回目提出
+        super(name, age);
+        // 初回提出時に以下のように書いた（条件を満たしていないので差し戻し）
+        //        super.setName(name);
+        //        super.setAge(age);
         this.hobby = hobby;
     }
 
